@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+
+    /* Typing animation variables */
+    --typing-duration: 1.5s;
+    --typing-delay: 0.2s;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animation for slider dots */
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 85;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.slider-dot circle {
+  fill: white;
+  stroke: white;
+  stroke-width: 4;
+  stroke-dasharray: 85;
+  stroke-dashoffset: 85;
+  transform-origin: 50%;
+  transform: rotate(-90deg);
+  transition: fill 0.5s, stroke-dashoffset 0.5s;
+}
+
+.slider-dot.active circle.circle-two {
+  animation: drawCircle 4s linear;
+  stroke-dashoffset: 0;
+  fill: transparent;
+}
+
+.slider-dot.active circle.circle-one {
+  opacity: 0;
+}
+
+.slider-dot circle.circle-one {
+  stroke: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.product-name {
+  font-family: "Nunito", sans-serif;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.image-hover {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.image-wrapper:hover .image-normal {
+  opacity: 0;
+}
+
+.image-wrapper:hover .image-hover {
+  opacity: 1;
+}
+
+/* Add these styles to your existing globals.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.collection-hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.collection-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.collection-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Collections page styles */
+.collection-link:hover .collection-image {
+  transform: scale(1.1);
+}
+
+.collection-link:hover .collection-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.collection-link:hover .collection-name {
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .slider-header h2 {
+    font-size: 6.6vw;
+  }
+
+  .collection-overlay {
+    display: none;
+  }
+
+  .product-item .collection-image {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Feature cards section styles */
+.feature-card {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.feature-card-container {
+  background-color: #faf5f0;
+}
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Start from below */
+  }
+  to {
+    transform: translateY(0); /* Move to the original position */
+  }
+}
+
+/* Slide Right Animation */
+@keyframes slideRight {
+  from {
+    transform: translateX(100%); /* Start from right */
+  }
+  to {
+    transform: translateX(0); /* Move to the original position */
+  }
+}
+
+/* Apply Slide Up animation for mobile view */
+@media (max-width: 768px) {
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+}
+
+/* Apply Slide Right animation for desktop view */
+@media (min-width: 769px) {
+  .animate-slide-right {
+    animation: slideRight 0.5s ease-out forwards;
+  }
+}
+
+/* Enhanced letter fade effects with different opacities */
+.typing-text .fade-letter-1 {
+  display: inline-block;
+  animation: fadeInLetter1 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+.typing-text .fade-letter-2 {
+  display: inline-block;
+  animation: fadeInLetter2 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes fadeInLetter1 {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes fadeInLetter2 {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.94);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0) scale(1);
+    filter: blur(0.5px);
+  }
+}
+
+/* Final letter animation */
+@keyframes finalLetterFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.94);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Image comparison slider styles */
+.comparison-slider-handle {
+  transition: transform 0.1s ease-out;
+}
+
+.comparison-slider-handle:hover,
+.comparison-slider-handle:active {
+  transform: scale(1.1);
+}
+
+.font-serif {
+  font-family: Georgia, serif;
+}
+
+/* Sale timer styles */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.sale-timer-pulse {
+  animation: pulse 2s infinite;
+}
