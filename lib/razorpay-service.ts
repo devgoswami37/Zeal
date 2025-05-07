@@ -10,6 +10,13 @@ export async function createRazorpayOrder(checkout: ICheckout) {
   try {
     const amount = Math.round(checkout.total * 100) // Razorpay expects amount in paise (smallest currency unit)
 
+    // Ensure that 'state' is available in the 'checkout' object
+    const state = checkout.state;  // Assuming 'state' is part of the 'checkout' object
+    console.log("Creating Razorpay order - State received:", state);
+    if (!state) {
+      throw new Error("State is required for checkout creation");
+    }
+
     const response = await fetch("https://api.razorpay.com/v1/orders", {
       method: "POST",
       headers: {
@@ -24,6 +31,7 @@ export async function createRazorpayOrder(checkout: ICheckout) {
           checkoutId: checkout._id.toString(),
           customerEmail: checkout.email,
           customerPhone: checkout.phone,
+          state, // Add the 'state' field here
         },
       }),
     })
