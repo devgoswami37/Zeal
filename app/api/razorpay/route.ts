@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       order: razorpayOrder,
-      key: process.env.RAZORPAY_KEY_ID || "rzp_live_ZEXsibkk8iNAWf",
+      key: process.env.RAZORPAY_KEY_ID,
       amount: razorpayOrder.amount,
       currency: razorpayOrder.currency,
       name: "ZEAL Decor",

@@ -2,9 +2,12 @@ import type { ICheckout } from "@/models/Checkout"
 import crypto from "crypto"
 
 // Replace with your actual Razorpay API keys
-const RAZORPAY_KEY_ID = process.env.RAZORPAY_KEY_ID || "rzp_live_ZEXsibkk8iNAWf"
-const RAZORPAY_KEY_SECRET = process.env.RAZORPAY_KEY_SECRET || "Nhn6Z37GIIn9qhPpEXvagpjt"
+const RAZORPAY_KEY_ID = process.env.RAZORPAY_KEY_ID
+const RAZORPAY_KEY_SECRET = process.env.RAZORPAY_KEY_SECRET
 
+if (!RAZORPAY_KEY_ID || !RAZORPAY_KEY_SECRET) {
+  throw new Error("Missing Razorpay environment variables in razorpay-services")
+}
 // Initialize Razorpay
 export async function createRazorpayOrder(checkout: ICheckout) {
   try {
