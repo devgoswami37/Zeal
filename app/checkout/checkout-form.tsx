@@ -151,104 +151,89 @@ export default function CheckoutForm() {
     }
   }
 
-  const handleRazorpayPayment = async (checkoutId: string) => {
-    try {
-      // Create a Razorpay order
-      const response = await fetch("/api/razorpay", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ checkoutId }),
-      })
+const handleRazorpayPayment = async (checkoutId: string) => {
+  try {
+    const response = await fetch("/api/razorpay", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ checkoutId }),
+    });
 
-      const data = await response.json()
+    const data = await response.json();
 
-      if (!data.success) {
-        throw new Error(data.error || "Failed to create Razorpay order")
-      }
-
-      // Initialize Razorpay
-      const options = {
-        key: data.key,
-        amount: data.amount,
-        currency: data.currency,
-        name: data.name,
-        description: data.description,
-        image: data.image,
-        order_id: data.order.id,
-        handler: async (response: any) => {
-          try {
-            // Verify the payment
-            const verifyResponse = await fetch("/api/razorpay/verify", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                checkoutId,
-                razorpayOrderId: response.razorpay_order_id,
-                razorpayPaymentId: response.razorpay_payment_id,
-                razorpaySignature: response.razorpay_signature,
-              }),
-            })
-
-            const verifyData = await verifyResponse.json()
-
-            if (verifyData.success) {
-              // Redirect to success page first
-            console.log("Redirecting to success page with checkoutId:", checkoutId);
-            console.log("Before redirection to success page");
-            console.log("Verify API response:", verifyData);
-router.push(`/checkout/success?id=${checkoutId}`);
-console.log("After redirection to success page");
-
-            // Clear the cart after redirection
-            setTimeout(() => {
-              clearCart();
-            }, 1000); // Delay clearing the cart to ensure redirection happens first
-
-            // Show success message
-            
-              router.push(`/checkout/success?id=${checkoutId}`)
-            } else {
-              throw new Error(verifyData.error || "Payment verification failed")
-            }
-          } catch (error) {
-            console.error("Payment verification error:", error)
-            toast({
-              title: "Payment verification failed",
-              description: "There was a problem verifying your payment. Please contact support.",
-              variant: "destructive",
-            })
-          }
-        },
-        prefill: data.prefill,
-        notes: data.notes,
-        theme: data.theme,
-        modal: {
-          ondismiss: () => {
-            toast({
-              title: "Payment cancelled",
-              description: "Your payment was cancelled. You can try again when you're ready.",
-            })
-            setIsLoading(false)
-          },
-        },
-      }
-
-      const razorpay = new window.Razorpay(options)
-      razorpay.open()
-    } catch (error) {
-      console.error("Razorpay payment error:", error)
-      toast({
-        title: "Payment initialization failed",
-        description: "There was a problem setting up the payment. Please try again.",
-        variant: "destructive",
-      })
-      setIsLoading(false)
+    if (!data.success) {
+      throw new Error(data.error || "Failed to create Razorpay order");
     }
+
+    const options = {
+      key: data.key,
+      amount: data.amount,
+      currency: data.currency,
+      name: data.name,
+      description: data.description,
+      image: data.image,
+      order_id: data.order.id,
+      handler: async (response: any) => {
+        try {
+          const verifyResponse = await fetch("/api/razorpay/verify", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              checkoutId,
+              razorpayOrderId: response.razorpay_order_id,
+              razorpayPaymentId: response.razorpay_payment_id,
+              razorpaySignature: response.razorpay_signature,
+            }),
+          });
+
+          const verifyData = await verifyResponse.json();
+          console.log("Verify API response:", verifyData);
+
+          if (verifyData.success) {
+            console.log("Redirecting to success page with checkoutId:", checkoutId);
+            router.push(`/checkout/success?id=${checkoutId}`);
+          } else {
+            throw new Error(verifyData.error || "Payment verification failed");
+          }
+        } catch (error) {
+          console.error("Payment verification error:", error);
+          toast({
+            title: "Payment verification failed",
+            description: "There was a problem verifying your payment. Please contact support.",
+            variant: "destructive",
+          });
+        }
+      },
+      prefill: data.prefill,
+      notes: data.notes,
+      theme: data.theme,
+      modal: {
+        ondismiss: () => {
+          toast({
+            title: "Payment cancelled",
+            description: "Your payment was cancelled. You can try again when you're ready.",
+          });
+          setIsLoading(false);
+        },
+      },
+    };
+
+    const razorpay = new window.Razorpay(options);
+    razorpay.open();
+  } catch (error) {
+    console.error("Razorpay payment error:", error);
+    toast({
+      title: "Payment initialization failed",
+      description: "There was a problem setting up the payment. Please try again.",
+      variant: "destructive",
+    });
+    setIsLoading(false);
   }
+};
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
