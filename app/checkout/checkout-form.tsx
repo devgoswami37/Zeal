@@ -197,7 +197,11 @@ export default function CheckoutForm() {
 
             if (verifyData.success) {
               // Redirect to success page first
-            router.push(`/checkout/success?id=${checkoutId}`);
+            console.log("Redirecting to success page with checkoutId:", checkoutId);
+            console.log("Before redirection to success page");
+            console.log("Verify API response:", verifyData);
+router.push(`/checkout/success?id=${checkoutId}`);
+console.log("After redirection to success page");
 
             // Clear the cart after redirection
             setTimeout(() => {
@@ -205,6 +209,7 @@ export default function CheckoutForm() {
             }, 1000); // Delay clearing the cart to ensure redirection happens first
 
             // Show success message
+            
               router.push(`/checkout/success?id=${checkoutId}`)
             } else {
               throw new Error(verifyData.error || "Payment verification failed")
