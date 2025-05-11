@@ -196,16 +196,15 @@ export default function CheckoutForm() {
             const verifyData = await verifyResponse.json()
 
             if (verifyData.success) {
-              // Clear the cart after successful payment
-              clearCart()
+              // Redirect to success page first
+            router.push(`/checkout/success?id=${checkoutId}`);
 
-              // Show success message
-              toast({
-                title: "Payment successful!",
-                description: "Your order has been placed and is being processed.",
-              })
+            // Clear the cart after redirection
+            setTimeout(() => {
+              clearCart();
+            }, 1000); // Delay clearing the cart to ensure redirection happens first
 
-              // Redirect to success page
+            // Show success message
               router.push(`/checkout/success?id=${checkoutId}`)
             } else {
               throw new Error(verifyData.error || "Payment verification failed")
