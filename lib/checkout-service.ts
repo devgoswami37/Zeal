@@ -101,6 +101,13 @@ export async function getAbandonedCheckouts(daysAgo = 7): Promise<ICheckout[]> {
     createdAt: { $lt: date },
   })
 }
+export async function markCheckoutAsFailed(id: string): Promise<void> {
+  await dbConnect();
+  await Checkout.findByIdAndUpdate(id, {
+    status: "failed",
+    updatedAt: new Date(),
+  });
+}
 
 export async function prepareCheckoutFromCart(
   cart: CartState,
