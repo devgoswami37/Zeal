@@ -3,7 +3,30 @@
 import type React from "react"
 
 import { createContext, useContext, useState, useEffect } from "react"
-import type { CartState, CartContextType, CartItem } from "@/lib/cart"
+import type { Product } from "@/app/lib/types"
+
+export interface CartItem {
+  id: number
+  product: Product
+  quantity: number
+  selectedColor: string
+  selectedSize: string
+}
+
+export interface CartState {
+  items: CartItem[]
+  subtotal: number
+  note: string
+}
+
+export interface CartContextType {
+  cart: CartState
+  addToCart: (item: CartItem) => void
+  removeFromCart: (itemId: number) => void
+  updateQuantity: (itemId: number, quantity: number) => void
+  updateNote: (note: string) => void
+  clearCart: () => void
+}
 
 const initialState: CartState = {
   items: [],
@@ -123,3 +146,5 @@ export function useCart() {
   }
   return context
 }
+
+// export type { CartItem }

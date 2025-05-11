@@ -1,6 +1,7 @@
 import dbConnect from "./mongodb"
 import Checkout, { type ICheckout } from "@/models/Checkout"
 import type { CartState } from "@/lib/cart"
+import { sendOrderStatusEmail } from "./email-service"
 
 export async function createCheckout(checkoutData: Partial<ICheckout>): Promise<ICheckout> {
   await dbConnect()
@@ -64,7 +65,10 @@ export async function markCheckoutAsPaid(
     },
     { new: true },
   )
-
+  // Send order confirmation email
+  if (checkout) {
+    await sendOrderStatusEmail(checkout)
+  }
   return checkout
 }
 
@@ -101,12 +105,32 @@ export async function getAbandonedCheckouts(daysAgo = 7): Promise<ICheckout[]> {
     createdAt: { $lt: date },
   })
 }
-export async function markCheckoutAsFailed(id: string): Promise<void> {
-  await dbConnect();
-  await Checkout.findByIdAndUpdate(id, {
-    status: "failed",
-    updatedAt: new Date(),
-  });
+// export async function markCheckoutAsFailed(id: string): Promise<void> {
+//   await dbConnect();
+//   await Checkout.findByIdAndUpdate(id, {
+//     status: "failed",
+//     updatedAt: new Date(),
+//   });
+// }
+export async function markCheckoutAsFailed(id: string, reason?: string): Promise<ICheckout | null> {
+  await dbConnect()
+
+  const checkout = await Checkout.findByIdAndUpdate(
+    id,
+    {
+      status: "failed",
+      notes: reason || "Payment failed",
+      updatedAt: new Date(),
+    },
+    { new: true }
+  )
+
+  // Optionally send email notification
+  if (checkout) {
+    await sendOrderStatusEmail(checkout)
+  }
+
+  return checkout
 }
 
 export async function prepareCheckoutFromCart(
