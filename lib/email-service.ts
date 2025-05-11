@@ -27,6 +27,17 @@ export const createOrderConfirmationEmail = (checkout: ICheckout) => {
     month: "long",
     day: "numeric",
   })
+    // Get the current date and time
+  const currentDateTime = new Date().toLocaleString("en-IN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  // Prepend a common 3-digit number and append the current date and time to the checkout ID
+  const formattedOrderId = `672-${checkout._id}-${currentDateTime}`;
 
   // Create the items HTML
   const itemsHtml = cartItems
@@ -144,7 +155,7 @@ export const createOrderConfirmationEmail = (checkout: ICheckout) => {
           <div class="order-info">
             <h3 style="margin-top: 0;">Order Details</h3>
             <p><strong>Order Date:</strong> ${orderDate}</p>
-            <p><strong>Order ID:</strong> ${checkout._id}</p>
+            <p><strong>Order ID:</strong> ${formattedOrderId}</p>
             <p><strong>Payment Method:</strong> ${checkout.paymentMethod || "Online Payment"}</p>
           </div>
           

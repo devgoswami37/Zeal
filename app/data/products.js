@@ -8,7 +8,7 @@ export const products = [
       name: "Graphic Printed T-shirt",
       description:
         "A flattering one-piece swimsuit featuring a V-neckline and ruched panels for a slimming effect. Made from premium Italian fabric with excellent shape retention and UV protection.",
-      price: 0.02,
+      price: 1.1,
       originalPrice: 129.95,
       category: "Outerwear",
       image: "https://images.bewakoof.com/t1080/men-s-navy-blue-doberman-graphic-printed-oversized-t-shirt-659850-1746189808-1.jpg",
