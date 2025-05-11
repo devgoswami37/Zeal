@@ -298,7 +298,7 @@ export const createPaymentFailedEmail = (checkout: ICheckout) => {
 export const sendOrderConfirmationEmail = async (checkout: ICheckout) => {
   try {
     const mailOptions = {
-      from: "devgoswami430@gmail.com",
+      from: "ZEAL Decor <noreply@zealdecor.store>",
       to: checkout.email,
       subject: "Your Order Confirmation",
       html: createOrderConfirmationEmail(checkout),
@@ -317,7 +317,7 @@ export const sendOrderConfirmationEmail = async (checkout: ICheckout) => {
 export const sendPaymentFailedEmail = async (checkout: ICheckout) => {
   try {
     const mailOptions = {
-      from: "devgoswami430@gmail.com",
+      from: "ZEAL Decor <noreply@zealdecor.store>",
       to: checkout.email,
       subject: "Payment Failed - Action Required",
       html: createPaymentFailedEmail(checkout),
