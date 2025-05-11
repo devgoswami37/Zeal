@@ -180,7 +180,7 @@ export default function CheckoutForm() {
         handler: async (response: any) => {
           try {
             // Verify the payment
-            const verifyResponse = await fetch("/api/checkout/razorpay/verify", {
+            const verifyResponse = await fetch("/api/razorpay/verify", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
