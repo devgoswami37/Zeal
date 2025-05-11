@@ -10,7 +10,7 @@ export const products = [
         "A flattering one-piece swimsuit featuring a V-neckline and ruched panels for a slimming effect. Made from premium Italian fabric with excellent shape retention and UV protection.",
       price: 0.02,
       originalPrice: 129.95,
-      category: "Outwear",
+      category: "Outerwear",
       image: "https://images.bewakoof.com/t1080/men-s-navy-blue-doberman-graphic-printed-oversized-t-shirt-659850-1746189808-1.jpg",
       hoverImage: "https://www.radliving.in/cdn/shop/products/rad5062.jpg?v=1663946515",
       colors: [

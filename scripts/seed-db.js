@@ -87,12 +87,15 @@ async function seedDatabase() {
 
     console.log(`Found ${products.length} products to seed`);
 
-    // Clear existing products
-    // await Product.deleteMany({});
-    // console.log("Cleared existing products");
+    // Update existing products or insert new ones
+    for (const product of products) {
+      await Product.updateOne(
+        { id: product.id },        // Match by ID
+        { $set: product },         // Update with product data
+        { upsert: true }           // Insert if not found
+      );
+    }
 
-    // Insert the products
-    await Product.insertMany(products);
     console.log(`Successfully seeded ${products.length} products`);
 
     // Disconnect from MongoDB

@@ -39,6 +39,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         success: true,
         message: "Payment verified successfully",
+        checkoutId: updatedCheckout._id, // Include checkoutId for frontend redirection
         checkout: updatedCheckout,
       })
     } else {
