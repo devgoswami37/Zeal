@@ -91,7 +91,7 @@ export async function markCheckoutAsProcessing(id: string, razorpayOrderId: stri
 export async function calculateShippingCost(pinCode: string): Promise<number> {
   // This is a placeholder function - you would implement your actual shipping cost calculation logic here
   // For now, we'll return a fixed shipping cost
-  return 1 // ₹50 shipping cost
+  return 0.01 // ₹50 shipping cost
 }
 
 export async function getAbandonedCheckouts(daysAgo = 7): Promise<ICheckout[]> {
