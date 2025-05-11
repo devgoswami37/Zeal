@@ -56,8 +56,8 @@ async function seedDatabase() {
     console.log(`Found ${products.length} products to seed`);
     
     // Clear existing products
-    await Product.deleteMany({});
-    console.log('Cleared existing products');
+    // await Product.deleteMany({});
+    // console.log('Cleared existing products');
     
     // Insert the products
     await Product.insertMany(products);

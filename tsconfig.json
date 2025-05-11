@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/data/reviewsss.js", "scripts/rev-seed.js", "scripts/test-db.mjs", "lib/mongodb.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/data/reviewsss.js", "scripts/rev-seed.js", "scripts/test-db.mjs", "lib/mongodb.ts", "app/data/products.js"],
   "exclude": ["node_modules"]
 }

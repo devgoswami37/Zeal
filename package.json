@@ -2,11 +2,14 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type": "module",
+    "seed": "node scripts/seed-db.js"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
