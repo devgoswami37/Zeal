@@ -27,17 +27,20 @@ export const createOrderConfirmationEmail = (checkout: ICheckout) => {
     month: "long",
     day: "numeric",
   })
-    // Get the current date and time
-  const currentDateTime = new Date().toLocaleString("en-IN", {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+// Format the current date and time in a way that looks like part of the order ID
+const currentDateTime = new Date();
+const obfuscatedDateTime = `${currentDateTime.getFullYear()}${(currentDateTime.getMonth() + 1)
+  .toString()
+  .padStart(2, "0")}${currentDateTime.getDate().toString().padStart(2, "0")}${currentDateTime
+  .getHours()
+  .toString()
+  .padStart(2, "0")}${currentDateTime.getMinutes().toString().padStart(2, "0")}${currentDateTime
+  .getSeconds()
+  .toString()
+  .padStart(2, "0")}`;
 
-  // Prepend a common 3-digit number and append the current date and time to the checkout ID
-  const formattedOrderId = `672 ${checkout._id} ${currentDateTime}`;
+// Prepend a common 3-digit number and append the obfuscated date and time to the checkout ID
+const formattedOrderId = `672${checkout._id}${obfuscatedDateTime}`;
 
   // Create the items HTML
   const itemsHtml = cartItems
