@@ -37,7 +37,7 @@ export const createOrderConfirmationEmail = (checkout: ICheckout) => {
   });
 
   // Prepend a common 3-digit number and append the current date and time to the checkout ID
-  const formattedOrderId = `672-${checkout._id}-${currentDateTime}`;
+  const formattedOrderId = `672 ${checkout._id} ${currentDateTime}`;
 
   // Create the items HTML
   const itemsHtml = cartItems
