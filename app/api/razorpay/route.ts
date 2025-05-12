@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { getCheckout, markCheckoutAsProcessing } from "@/lib/checkout-service"
-import { createRazorpayOrder } from "@/lib/razorpay-service"
+import Razorpay from "razorpay"
 
 export async function POST(request: NextRequest) {
   try {
@@ -17,31 +17,46 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, error: "Checkout not found" }, { status: 404 })
     }
 
+    // Initialize Razorpay
+    const razorpay = new Razorpay({
+      key_id: process.env.RAZORPAY_KEY_ID!,
+      key_secret: process.env.RAZORPAY_KEY_SECRET!,
+    })
+
     // Create a Razorpay order
-    const razorpayOrder = await createRazorpayOrder(checkout)
+    const options = {
+      amount: Math.round(checkout.total * 100), // Razorpay expects amount in paise
+      currency: "INR",
+      receipt: `receipt_${checkoutId}`,
+      payment_capture: 1, // Auto-capture payment
+    }
+
+    const order = await razorpay.orders.create(options)
 
     // Update the checkout with the Razorpay order ID
-    await markCheckoutAsProcessing(checkoutId, razorpayOrder.id)
+    await markCheckoutAsProcessing(checkoutId, order.id)
 
+    // Return the order details to the client
     return NextResponse.json({
       success: true,
-      order: razorpayOrder,
       key: process.env.RAZORPAY_KEY_ID,
-      amount: razorpayOrder.amount,
-      currency: razorpayOrder.currency,
-      name: "ZEAL Decor",
-      description: "Purchase from ZEAL Decor",
-      image: "https://res.cloudinary.com/dqhp9pxpy/image/upload/v1746627843/ZEAL_logo.png", // Your company logo
+      amount: order.amount,
+      currency: order.currency,
+      name: "Your Store",
+      description: `Order #${checkoutId}`,
+      image: "/logo.png", // Replace with your logo URL
+      order: order,
       prefill: {
         name: `${checkout.firstName} ${checkout.lastName}`,
         email: checkout.email,
         contact: checkout.phone,
       },
       notes: {
+        checkoutId: checkoutId,
         address: `${checkout.address}, ${checkout.city}, ${checkout.state}, ${checkout.pinCode}`,
       },
       theme: {
-        color: "#3399cc",
+        color: "#3B82F6", // Blue color
       },
     })
   } catch (error) {

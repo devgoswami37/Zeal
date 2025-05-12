@@ -9,18 +9,18 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
       return NextResponse.json({ success: false, error: "Checkout ID is required" }, { status: 400 })
     }
 
+    console.log(`Fetching checkout with ID: ${id}`)
     const checkout = await getCheckout(id)
 
     if (!checkout) {
+      console.log(`Checkout not found for ID: ${id}`)
       return NextResponse.json({ success: false, error: "Checkout not found" }, { status: 404 })
     }
 
-    return NextResponse.json({
-      success: true,
-      checkout,
-    })
+    console.log(`Checkout found for ID: ${id}, status: ${checkout.status}`)
+    return NextResponse.json({ success: true, checkout })
   } catch (error) {
-    console.error("Checkout retrieval error:", error)
-    return NextResponse.json({ success: false, error: "Failed to retrieve checkout" }, { status: 500 })
+    console.error("Error fetching checkout:", error)
+    return NextResponse.json({ success: false, error: "Failed to fetch checkout" }, { status: 500 })
   }
 }

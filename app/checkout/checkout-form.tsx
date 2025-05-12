@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { Types } from "mongoose";
+import { Types } from "mongoose"
 
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
@@ -111,7 +111,7 @@ export default function CheckoutForm() {
   useEffect(() => {
     const { address, city, state, pinCode } = formData
     setAddressComplete(Boolean(address && city && state && pinCode))
-  }, [formData.address, formData.city, formData.state, formData.pinCode])
+  }, [formData.address, formData.city, formData.state, formData.pinCode, formData])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target as HTMLInputElement
@@ -151,89 +151,100 @@ export default function CheckoutForm() {
     }
   }
 
-const handleRazorpayPayment = async (checkoutId: string) => {
-  try {
-    const response = await fetch("/api/razorpay", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ checkoutId }),
-    });
-
-    const data = await response.json();
-
-    if (!data.success) {
-      throw new Error(data.error || "Failed to create Razorpay order");
-    }
-
-    const options = {
-      key: data.key,
-      amount: data.amount,
-      currency: data.currency,
-      name: data.name,
-      description: data.description,
-      image: data.image,
-      order_id: data.order.id,
-      handler: async (response: any) => {
-        try {
-          const verifyResponse = await fetch("/api/razorpay/verify", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              checkoutId,
-              razorpayOrderId: response.razorpay_order_id,
-              razorpayPaymentId: response.razorpay_payment_id,
-              razorpaySignature: response.razorpay_signature,
-            }),
-          });
-
-          const verifyData = await verifyResponse.json();
-          console.log("Verify API response:", verifyData);
-
-          if (verifyData.success) {
-            console.log("Redirecting to success page with checkoutId:", checkoutId);
-            router.push(`/checkout/success?id=${checkoutId}`);
-          } else {
-            throw new Error(verifyData.error || "Payment verification failed");
-          }
-        } catch (error) {
-          console.error("Payment verification error:", error);
-          toast({
-            title: "Payment verification failed",
-            description: "There was a problem verifying your payment. Please contact support.",
-            variant: "destructive",
-          });
-        }
-      },
-      prefill: data.prefill,
-      notes: data.notes,
-      theme: data.theme,
-      modal: {
-        ondismiss: () => {
-          toast({
-            title: "Payment cancelled",
-            description: "Your payment was cancelled. You can try again when you're ready.",
-          });
-          setIsLoading(false);
+  const handleRazorpayPayment = async (checkoutId: string) => {
+    try {
+      // Create a Razorpay order - using the correct API endpoint
+      const response = await fetch("/api/razorpay", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      },
-    };
+        body: JSON.stringify({ checkoutId }),
+      })
 
-    const razorpay = new window.Razorpay(options);
-    razorpay.open();
-  } catch (error) {
-    console.error("Razorpay payment error:", error);
-    toast({
-      title: "Payment initialization failed",
-      description: "There was a problem setting up the payment. Please try again.",
-      variant: "destructive",
-    });
-    setIsLoading(false);
+      const data = await response.json()
+
+      if (!data.success) {
+        throw new Error(data.error || "Failed to create Razorpay order")
+      }
+
+      // Initialize Razorpay
+      const options = {
+        key: data.key,
+        amount: data.amount,
+        currency: data.currency,
+        name: data.name,
+        description: data.description,
+        image: data.image,
+        order_id: data.order.id,
+        handler: async (response: any) => {
+          try {
+            // Verify the payment - using the correct API endpoint
+            const verifyResponse = await fetch("/api/razorpay/verify", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                checkoutId,
+                razorpayOrderId: response.razorpay_order_id,
+                razorpayPaymentId: response.razorpay_payment_id,
+                razorpaySignature: response.razorpay_signature,
+              }),
+            })
+
+            const verifyData = await verifyResponse.json()
+
+            if (verifyData.success) {
+              // Clear the cart after successful payment
+              clearCart()
+
+              // Show success message
+              toast({
+                title: "Payment successful!",
+                description: "Your order has been placed and is being processed.",
+              })
+
+              // Redirect to success page
+              router.push(`/checkout/success?id=${checkoutId}`)
+            } else {
+              throw new Error(verifyData.error || "Payment verification failed")
+            }
+          } catch (error) {
+            console.error("Payment verification error:", error)
+            toast({
+              title: "Payment verification failed",
+              description: "There was a problem verifying your payment. Please contact support.",
+              variant: "destructive",
+            })
+          }
+        },
+        prefill: data.prefill,
+        notes: data.notes,
+        theme: data.theme,
+        modal: {
+          ondismiss: () => {
+            toast({
+              title: "Payment cancelled",
+              description: "Your payment was cancelled. You can try again when you're ready.",
+            })
+            setIsLoading(false)
+          },
+        },
+      }
+
+      const razorpay = new window.Razorpay(options)
+      razorpay.open()
+    } catch (error) {
+      console.error("Razorpay payment error:", error)
+      toast({
+        title: "Payment initialization failed",
+        description: "There was a problem setting up the payment. Please try again.",
+        variant: "destructive",
+      })
+      setIsLoading(false)
+    }
   }
-};
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

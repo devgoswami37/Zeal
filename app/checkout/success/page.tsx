@@ -11,20 +11,42 @@ export default function CheckoutSuccessPage() {
   const checkoutId = searchParams.get("id")
   const [orderDetails, setOrderDetails] = useState<any>(null)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchOrderDetails = async () => {
-      if (!checkoutId) return
+      if (!checkoutId) {
+        console.error("No checkout ID provided")
+        setError("No order ID provided")
+        setLoading(false)
+        return
+      }
+
+      console.log("Fetching order details for ID:", checkoutId)
 
       try {
         const response = await fetch(`/api/checkout/${checkoutId}`)
+
+        if (!response.ok) {
+          const errorText = await response.text()
+          console.error(`API responded with status: ${response.status}`, errorText)
+          setError(`Failed to fetch order details: ${response.status}`)
+          setLoading(false)
+          return
+        }
+
         const data = await response.json()
+        console.log("Order details response:", data)
 
         if (data.success) {
           setOrderDetails(data.checkout)
+        } else {
+          console.error("API returned error:", data.error)
+          setError(data.error || "Failed to fetch order details")
         }
       } catch (error) {
         console.error("Error fetching order details:", error)
+        setError("An error occurred while fetching order details")
       } finally {
         setLoading(false)
       }
@@ -44,11 +66,20 @@ export default function CheckoutSuccessPage() {
             {orderDetails?.paymentId && (
               <p className="text-sm text-gray-500 mt-2">Payment ID: {orderDetails.paymentId}</p>
             )}
+            {checkoutId && <p className="text-sm text-gray-500 mt-1">Order ID: {checkoutId}</p>}
           </div>
 
           {loading ? (
             <div className="text-center py-8">
               <p>Loading order details...</p>
+            </div>
+          ) : error ? (
+            <div className="text-center py-8 text-red-500">
+              <p>{error}</p>
+              <p className="mt-4 text-gray-600">
+                Don't worry, your order has been processed successfully. You can contact customer support for more
+                details.
+              </p>
             </div>
           ) : orderDetails ? (
             <div className="space-y-6">
