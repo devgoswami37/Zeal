@@ -1,7 +1,7 @@
+// reset-password-form.tsx
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useAuth } from "@/context/auth-context"
