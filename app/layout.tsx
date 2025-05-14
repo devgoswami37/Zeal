@@ -3,7 +3,9 @@ import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "./components/theme-provider"
 import { CartProvider } from "@/context/cart-context"
+import { AuthProvider } from "@/context/auth-context" // ✅ Import AuthProvider
 import ClientLayout from "./ClientLayout"
+import Providers from './Providers'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -13,7 +15,6 @@ export const metadata = {
   generator: "v0.dev",
 }
 
-// In your RootLayout component, add the CartCleanup component
 export default function RootLayout({
   children,
 }: {
@@ -22,17 +23,23 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <CartProvider>
-            <ClientLayout>{children}</ClientLayout>
-          </CartProvider>
+          <AuthProvider> {/* ✅ Added AuthProvider wrapper */}
+            <CartProvider>
+              <ClientLayout>{children}</ClientLayout>
+            </CartProvider>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
   )
 }
+
 
 import './globals.css'

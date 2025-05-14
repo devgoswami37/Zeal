@@ -6,6 +6,9 @@ import Image from "next/image"
 import { Menu, X, ChevronDown, ChevronRight, Search, ShoppingCart, ChevronLeft } from "lucide-react"
 import { usePathname, useRouter } from "next/navigation"
 import { useCart } from "@/context/cart-context"
+import { useAuth } from "@/context/auth-context"
+import { User } from "lucide-react"
+
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,6 +23,7 @@ export default function Header() {
   const router = useRouter()
   const isHomePage = pathname === "/"
   const { cart } = useCart()
+  const { user } = useAuth()
 
   useEffect(() => {
     setIsMounted(true) // 👈 Mark component as mounted
@@ -159,6 +163,9 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center">
+          <Link href={user ? "/account" : "/login"} className="p-2">
+            <User className="h-5 w-5" />
+          </Link>
             <button className="p-2" onClick={() => router.push("/search")}>
               <Search className="h-5 w-5" />
             </button>
@@ -201,6 +208,9 @@ export default function Header() {
 
           <Link href="/contact" className="text-2xl" onClick={toggleMobileMenu}>
             Contact
+          </Link>
+          <Link href={user ? "/account" : "/login"} className="text-2xl" onClick={toggleMobileMenu}>
+            My Account
           </Link>
         </div>
       )}

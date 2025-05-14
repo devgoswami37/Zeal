@@ -53,3 +53,4 @@ async function dbConnect() {
 }
 
 export default dbConnect;
+export const connectToDatabase = dbConnect
