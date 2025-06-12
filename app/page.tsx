@@ -10,10 +10,9 @@ import SustainabilitySection from "./components/sustainability-section"
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Header />
       <div className="pt-16">
-        {/* Added padding to account for header height */}
         <HeroSlider />
         <CollectionsSlider />
         <FeatureCards />
@@ -23,6 +22,6 @@ export default function Home() {
         <ShopTheLookSection />
         <SaleTimer />
       </div>
-    </main>
+    </>
   )
 }

@@ -5,7 +5,6 @@ import { ThemeProvider } from "./components/theme-provider"
 import { CartProvider } from "@/context/cart-context"
 import { AuthProvider } from "@/context/auth-context" // ✅ Import AuthProvider
 import ClientLayout from "./ClientLayout"
-import Providers from './Providers'
 
 const inter = Inter({ subsets: ["latin"] })
 
