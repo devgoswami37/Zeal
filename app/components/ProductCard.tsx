@@ -162,7 +162,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       <Link href={`/product/${product.id}`} className="block">
         <div
           ref={cardRef}
-          className="product-card bg-white rounded-lg border border-gray-100 overflow-hidden relative"
+          className="product-card bg-white border border-gray-100 overflow-hidden relative"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

@@ -13,43 +13,31 @@ import Header from "../components/header"
 
 const popularCategories = [
   {
-    name: "Women",
-    image: "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/one-piece_1950x.jpg?v=1652113013",
-    link: "/collections/outerwear",
+    name: "Sarees",
+    image: "https://sudathi.com/cdn/shop/files/4319S274_4.jpg?v=1743756220&width=1100",
+    link: "/collections/sarees",
   },
   {
-    name: "Men",
+    name: "Shirts",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-02%20at%2020.21.44_cee6f0bc.jpg-JLYcQ69OzxU2DUZxCe4n1B1UfOHoMO.jpeg",
-    link: "/collections/men",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742193406_7543978.jpg?format=webp&w=480&dpr=1.3",
+    link: "/collections/shirts",
   },
   {
-    name: "Kids",
+    name: "Oversized T-Shirts",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-02%20at%2020.21.44_cee6f0bc.jpg-JLYcQ69OzxU2DUZxCe4n1B1UfOHoMO.jpeg",
-    link: "/collections/kids",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722525147_4109345.jpg?format=webp&w=480&dpr=1.3",
+    link: "/collections/oversized-t-shirts",
   },
   {
-    name: "Sunglasses",
+    name: "Sneakers",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-02%20at%2020.21.44_cee6f0bc.jpg-JLYcQ69OzxU2DUZxCe4n1B1UfOHoMO.jpeg",
-    link: "/collections/sunglasses",
-  },
-  {
-    name: "Home",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-02%20at%2020.21.44_cee6f0bc.jpg-JLYcQ69OzxU2DUZxCe4n1B1UfOHoMO.jpeg",
-    link: "/collections/home",
-  },
-  {
-    name: "Hot Brands",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-02%20at%2020.21.44_cee6f0bc.jpg-JLYcQ69OzxU2DUZxCe4n1B1UfOHoMO.jpeg",
-    link: "/collections/hot-brands",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749638084_2029020.jpg?format=webp&w=480&dpr=1.3",
+    link: "/collections/sneakers",
   },
 ]
 
-const trendingSearches = ["Shirts", "Dresses", "Jeans", "Jackets", "Swimwear", "T-Shirts", "Accessories", "Shoes"]
+const trendingSearches = ["Shirts", "Tops", "Oversized T-Shirts", "Jackets","Dresses", "T-Shirts", "Sneakers"]
 
 interface Product {
   id: string
@@ -282,9 +270,6 @@ export default function SearchPage() {
               <Search className="h-5 w-5" />
             </button>
           </form>
-          <button className="p-2">
-            <QrCode className="h-5 w-5" />
-          </button>
         </div>
       )}
 
@@ -311,7 +296,7 @@ export default function SearchPage() {
             {/* Popular Categories */}
             <section>
               <h2 className="text-xl font-bold mb-4">Popular Categories</h2>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {popularCategories.map((category) => (
                   <Link key={category.name} href={category.link} className="text-center space-y-2">
                     <div className="relative w-full pt-[100%] rounded-lg overflow-hidden bg-gray-100">
@@ -319,7 +304,7 @@ export default function SearchPage() {
                         src={category.image || "/placeholder.svg"}
                         alt={category.name}
                         fill
-                        className="object-cover"
+                        className="object-cover object-top"
                       />
                     </div>
                     <p className="font-medium">{category.name}</p>
