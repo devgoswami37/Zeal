@@ -201,7 +201,7 @@ export function QuickBuyModal({ product, isOpen, onClose }: QuickBuyModalProps) 
                 <h3 className="font-medium mb-2">{product.name}</h3>
                 <p className="text-gray-500 mb-1">Color: {addedItem.selectedColor}</p>
                 <p className="text-gray-500 mb-2">Size: {addedItem.selectedSize}</p>
-                <p className="font-medium">${product.price.toFixed(2)}</p>
+                <p className="font-medium">₹{product.price.toFixed(2)}</p>
               </div>
             </div>
 
@@ -308,7 +308,7 @@ export function QuickBuyModal({ product, isOpen, onClose }: QuickBuyModalProps) 
   <div className="w-1/2 p-4">
     <h2 className="text-xl font-bold mb-2">{product.name}</h2>
     <div className="flex items-center gap-2 mb-4">
-      <span className="text-xl font-bold">${product.price.toFixed(2)}</span>
+      <span className="text-xl font-bold">₹{product.price.toFixed(2)}</span>
       {product.originalPrice > product.price && (
         <span className="text-gray-500 line-through">
           ${product.originalPrice.toFixed(2)}
@@ -417,7 +417,7 @@ export function QuickBuyModal({ product, isOpen, onClose }: QuickBuyModalProps) 
         {/* Add to Cart Button */}
         <div className="sticky bottom-0 p-4 bg-white border-t mt-auto">
           <Button onClick={handleAddToCart} className="w-full bg-black hover:bg-black/90 text-white py-6">
-            ADD TO CART • ${(product.price * quantity).toFixed(2)}
+            ADD TO CART • ₹{(product.price * quantity).toFixed(2)}
           </Button>
           <button
             onClick={() => router.push(`/product/${product.id}`)}

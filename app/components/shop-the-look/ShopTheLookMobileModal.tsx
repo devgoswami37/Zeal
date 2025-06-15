@@ -67,7 +67,7 @@ export function ShopTheLookMobileModal({
             {/* Product Name, Price */}
             <div className="w-full md:w-1/2 pl-4">
               <h3 className="font-bold text-xl mb-1">{product.name}</h3>
-              <p className="font-medium text-xl mb-2">${product.price.toFixed(2)}</p>
+              <p className="font-medium text-xl mb-2">₹{product.price.toFixed(2)}</p>
               {product.inStock ? (
                 <p className="text-amber-600 text-sm">
                   <span className="inline-block w-2 h-2 bg-amber-600 rounded-full mr-1"></span>
@@ -123,7 +123,7 @@ export function ShopTheLookMobileModal({
         {/* Add to Cart Button */}
         <div className="p-4 border-t">
           <Button className="w-full bg-black hover:bg-black/90 text-white py-6">
-            ADD TO CART • ${product.price.toFixed(2)}
+            ADD TO CART • ₹{product.price.toFixed(2)}
           </Button>
         </div>
       </div>

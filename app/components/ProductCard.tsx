@@ -227,9 +227,9 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
           <div className="p-4">
             <h3 className="product-name text-base mb-2">{product.name}</h3>
             <div className="flex items-center space-x-2">
-              <span className="text-base font-bold text-gray-900">${product.price.toFixed(2)}</span>
+              <span className="text-base font-bold text-gray-900">₹{product.price.toFixed(2)}</span>
               {product.originalPrice !== product.price && (
-                <span className="text-sm text-gray-500 line-through">${product.originalPrice.toFixed(2)}</span>
+                <span className="text-sm text-gray-500 line-through">₹{product.originalPrice.toFixed(2)}</span>
               )}
             </div>
           </div>

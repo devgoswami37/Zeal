@@ -255,7 +255,7 @@ export function ProductHotspot({ position, product, isSelected, onClick, onQuick
             <div className="w-1/2 pl-3 flex flex-col justify-between">
               <div>
                 <h3 className="font-bold text-base">{product.name}</h3>
-                <p className="font-medium text-base mt-1">${product.price.toFixed(2)}</p>
+                <p className="font-medium text-base mt-1">₹{product.price.toFixed(2)}</p>
               </div>
 
               <Button

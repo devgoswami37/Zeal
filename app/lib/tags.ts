@@ -5,66 +5,55 @@ export interface TagGroup {
 
 export const tagGroups: TagGroup[] = [
   {
+    mainTag: "saree",
+    relatedTags: [
+      "Women's Sarees",
+      "Silk Sarees",
+      "Cotton Sarees",
+      "Party Wear Sarees",
+      "Designer Sarees",
+      "Printed Sarees",
+      "Traditional Sarees",
+    ],
+  },
+  {
     mainTag: "shirt",
     relatedTags: [
-      "Men's Shirts",
-      "Casual Shirts for Men",
+      "Women's Shirts",
+      "Casual Shirts for Women",
       "Long Sleeve Shirts",
-      "Slim Fit Shirts",
-      "Checked Shirts",
-      "Plain Shirts for Men",
-      "Men's Formal Shirts",
+      "Formal Shirts for Women",
+      "Printed Shirts",
+      "Oversized Shirts",
+      "Cotton Shirts for Women",
     ],
   },
   {
-    mainTag: "dress",
+    mainTag: "oversized-tshirt",
     relatedTags: [
-      "Women's Dresses",
-      "Casual Dresses",
-      "Party Dresses",
-      "Maxi Dresses",
-      "Summer Dresses",
-      "Evening Dresses",
-      "Floral Dresses",
+      "Oversized T-Shirts for Women",
+      "Casual Loose Tees",
+      "Graphic Tees for Women",
+      "Drop Shoulder T-Shirts",
+      "Baggy T-Shirts",
+      "Streetwear T-Shirts",
+      "Cotton Oversized Tees",
     ],
   },
   {
-    mainTag: "jeans",
+    mainTag: "sneakers",
     relatedTags: [
-      "Men's Jeans",
-      "Women's Jeans",
-      "Slim Fit Jeans",
-      "Straight Fit Jeans",
-      "Skinny Jeans",
-      "Ripped Jeans",
-      "High-Waist Jeans",
-    ],
-  },
-  {
-    mainTag: "jacket",
-    relatedTags: [
-      "Winter Jackets",
-      "Leather Jackets",
-      "Denim Jackets",
-      "Bomber Jackets",
-      "Waterproof Jackets",
-      "Sports Jackets",
-      "Casual Jackets",
-    ],
-  },
-  {
-    mainTag: "swimwear",
-    relatedTags: [
-      "One-Piece Swimsuits",
-      "Bikinis",
-      "Swimming Trunks",
-      "Beach Wear",
-      "Swim Shorts",
-      "Athletic Swimwear",
-      "Designer Swimwear",
+      "Men's Sneakers",
+      "Unisex Sneakers",
+      "Running Sneakers",
+      "Casual Sneakers",
+      "High Top Sneakers",
+      "White Sneakers",
+      "Chunky Sneakers",
     ],
   },
 ]
+
 
 export function findRelatedTags(searchTerm: string): string[] {
   const normalizedSearch = searchTerm.toLowerCase()

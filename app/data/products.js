@@ -4,7 +4,7 @@
 // filepath: c:\Users\pg177\Downloads\ecommerce-products (5)\app\data\products.ts
 export const products = [
   {
-    id: 1,
+    id: 24,
     name: "Plaid Shirt: Petunia",
     description:
       "A flattering Shirt featuring a V-neckline and ruched panels for a slimming effect. Made from premium Italian fabric with excellent shape retention and UV protection.",
@@ -47,7 +47,7 @@ export const products = [
       "80% Nylon, 20% Elastane",
     ],
     inStock: true,
-    mainTags: ["swimwear"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_5007470.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_6796932.jpg?format=webp&w=480&dpr=1.3",
@@ -87,7 +87,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: false,
-    mainTags: ["jacket"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749040008_9791973.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749040008_9924180.jpg?format=webp&w=480&dpr=1.3",
@@ -164,7 +164,7 @@ export const products = [
       "Professional leather clean only",
     ],
     inStock: false,
-    mainTags: ["jacket"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1746866225_9518723.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1746866225_6791007.jpg?format=webp&w=480&dpr=1.3",
@@ -203,7 +203,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: false,
-    mainTags: ["pants"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1712922820_1890841.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1712922820_1969898.jpg?format=webp&w=480&dpr=1.3",
@@ -241,7 +241,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: false,
-    mainTags: ["hoodie"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1748605072_7145663.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1748605072_3198874.jpg?format=webp&w=480&dpr=1.3",
@@ -281,7 +281,7 @@ export const products = [
       "Machine washable cold",
     ],
     inStock: true,
-    mainTags: ["dress"],
+    mainTags: ["shirt"],
     badge: "SELLING FAST",
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1746010730_4476030.jpg?format=webp&w=480&dpr=1.3",
@@ -326,7 +326,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["jeans"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1712922820_1890841.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1712922820_1969898.jpg?format=webp&w=480&dpr=1.3",
@@ -409,7 +409,7 @@ export const products = [
       "Dry clean only",
     ],
     inStock: true,
-    mainTags: ["jacket"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713507434_2279293.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713507434_4446926.jpg?format=webp&w=480&dpr=1.3",
@@ -449,7 +449,7 @@ export const products = [
       "Machine washable cold",
     ],
     inStock: true,
-    mainTags: ["activewear"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740721606_7886707.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740721606_8624440.jpg?format=webp&w=480&dpr=1.3",
@@ -528,7 +528,7 @@ export const products = [
       "Dry clean only",
     ],
     inStock: true,
-    mainTags: ["skirt"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1727158964_1181422.jpg?format=webp&w=480&dpr=1.3",
     ],
@@ -566,7 +566,7 @@ export const products = [
       "Hand wash cold",
     ],
     inStock: true,
-    mainTags: ["cardigan"],
+    mainTags: ["shirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1746683723_7200790.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1746683723_9769577.jpg?format=webp&w=480&dpr=1.3",
@@ -605,7 +605,7 @@ export const products = [
       "Dry clean only",
     ],
     inStock: true,
-    mainTags: ["blazer"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1727349727_6552348.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1727349727_1432691.jpg?format=webp&w=480&dpr=1.3",
@@ -645,7 +645,7 @@ export const products = [
       "Machine washable cold",
     ],
     inStock: true,
-    mainTags: ["dress"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1728654846_8292412.jpg?format=webp&w=480&dpr=1.3",
     ],
@@ -683,7 +683,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["pants"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722524120_7698136.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722524120_2834897.jpg?format=webp&w=480&dpr=1.3",
@@ -727,7 +727,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["hoodie"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734761843_6002342.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1738155077_2483635.jpg?format=webp&w=480&dpr=1.3",
@@ -771,7 +771,7 @@ export const products = [
       "Machine washable cold",
     ],
     inStock: true,
-    mainTags: ["dress"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1744708323_4653671.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1744708323_3487987.jpg?format=webp&w=480&dpr=1.3",
@@ -809,7 +809,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["shorts"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714979667_3721784.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714979667_6791071.jpg?format=webp&w=480&dpr=1.3",
@@ -854,7 +854,7 @@ export const products = [
       "Hand wash cold",
     ],
     inStock: true,
-    mainTags: ["sweater"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743790731_4404492.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743790731_6277784.jpg?format=webp&w=480&dpr=1.3",
@@ -893,7 +893,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["jumpsuit"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1744697972_9253275.jpg?format=webp&w=480&dpr=1.3",
     ],
@@ -936,14 +936,14 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["tank"],
+    mainTags: ["oversized-tshirt"],
     additionalImages: [
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714816115_1270130.jpg?format=webp&w=480&dpr=1.3",
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714816115_5835686.jpg?format=webp&w=480&dpr=1.3",
     ],
   },
   {
-    id: 24,
+    id: 1,
     name: "Black Cotton Blend Printed Saree",
     description:
       "Stylish Black Cotton Blend Printed Saree with a flattering A-line silhouette, perfect for day-to-night outfits.",
@@ -975,7 +975,7 @@ export const products = [
       "Wipe clean with damp cloth",
     ],
     inStock: true,
-    mainTags: ["skirt"],
+    mainTags: ["saree"],
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/3999S124_1.jpg?v=1736165267&width=1100",
       "https://sudathi.com/cdn/shop/files/3999S124_5.jpg?v=1741516587&width=1100",
@@ -1013,7 +1013,7 @@ export const products = [
       "Hand wash cold",
     ],
     inStock: true,
-    mainTags: ["kimono"],
+    mainTags: ["saree"],
     badge: "",
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/3111S413_4.jpg?v=1723523075&width=1100",
@@ -1055,7 +1055,7 @@ export const products = [
       "Machine washable cold",
     ],
     inStock: true,
-    mainTags: ["pants"],
+    mainTags: ["saree"],
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/4453S308_2.jpg?v=1749816012&width=1100",
       "https://sudathi.com/cdn/shop/files/4453S308_4.jpg?v=1749816012&width=1100",
@@ -1100,7 +1100,7 @@ export const products = [
       "80% Nylon, 20% Elastane",
     ],
     inStock: true,
-    mainTags: ["swimwear"],
+    mainTags: ["saree"],
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/39RS141_1.jpg?v=1744789725&width=1100",
       "https://sudathi.com/cdn/shop/files/39RS141_2.jpg?v=1744370157&width=1100",
@@ -1142,7 +1142,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["shirt", "summer"],
+    mainTags: ["saree"],
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/40RS152_4.jpg?v=1744797229&width=1100",
       "https://sudathi.com/cdn/shop/files/40RS152_6.jpg?v=1744797229&width=1100",
@@ -1181,7 +1181,7 @@ export const products = [
       "Hand wash cold",
     ],
     inStock: true,
-    mainTags: ["swimwear", "bikini"],
+    mainTags: ["saree"],
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/4319S274_2.jpg?v=1743756220&width=1100",
       "https://sudathi.com/cdn/shop/files/4319S274_3.jpg?v=1743756220&width=1100",
@@ -1220,7 +1220,7 @@ export const products = [
       "Machine washable",
     ],
     inStock: true,
-    mainTags: ["pants", "summer"],
+    mainTags: ["saree"],
     additionalImages: [
       "https://sudathi.com/cdn/shop/files/4352S3117_3.jpg?v=1746794423&width=1100",
       "https://sudathi.com/cdn/shop/files/4352S3117_2.jpg?v=1746794423&width=1100",
@@ -1260,7 +1260,7 @@ export const products = [
     "Upper: Mesh & Synthetic | Sole: Rubber",
   ],
   inStock: true,
-  mainTags: ["swimwear"],
+  mainTags: ["sneakers"],
   additionalImages: [
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734066276_5236440.jpg?format=webp&w=480&dpr=1.3",
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6859456.jpg?format=webp&w=480&dpr=1.3",
@@ -1344,7 +1344,7 @@ export const products = [
     "Upper: Mesh & Synthetic | Sole: Rubber",
   ],
   inStock: true,
-  mainTags: ["swimwear"],
+  mainTags: ["sneakers"],
   additionalImages: [
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1637827.jpg?format=webp&w=480&dpr=1.3",
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8817642.jpg?format=webp&w=480&dpr=1.3",
@@ -1391,7 +1391,7 @@ export const products = [
     "Upper: Mesh & Synthetic | Sole: Rubber",
   ],
   inStock: true,
-  mainTags: ["swimwear"],
+  mainTags: ["sneakers"],
   additionalImages: [
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_7817440.jpg?format=webp&w=480&dpr=1.3",
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8289075.jpg?format=webp&w=480&dpr=1.3",
@@ -1433,7 +1433,7 @@ export const products = [
     "Upper: Mesh & Synthetic | Sole: Rubber",
   ],
   inStock: true,
-  mainTags: ["swimwear"],
+  mainTags: ["sneakers"],
   additionalImages: [
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_6968783.jpg?format=webp&w=480&dpr=1.3",
   ],
@@ -1473,7 +1473,7 @@ export const products = [
     "Upper: Mesh & Synthetic | Sole: Rubber",
   ],
   inStock: true,
-  mainTags: ["swimwear"],
+  mainTags: ["sneakers"],
   additionalImages: [
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_7988475.jpg?format=webp&w=480&dpr=1.3",
     "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4953005.jpg?format=webp&w=480&dpr=1.3",

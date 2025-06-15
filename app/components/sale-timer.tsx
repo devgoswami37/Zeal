@@ -63,7 +63,7 @@ export default function SaleTimer() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="https://chantilly.myshopify.com/cdn/shop/files/sunsets-coll_1__CROP.jpg?v=1699884173&width=2000"
+          src="https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/files/wer_66bedac6-cee9-4ee6-bf1b-56223e861b2d-min.png?v=1741362856&width=4450"
           alt="Sale background"
           fill
           className="object-cover"

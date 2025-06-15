@@ -66,7 +66,7 @@ export default function CartPage() {
                   <div className="flex-1">
                     <div className="flex justify-between mb-2">
                       <h3 className="font-medium">{item.product.name}</h3>
-                      <p className="font-medium">${item.product.price.toFixed(2)}</p>
+                      <p className="font-medium">₹{item.product.price.toFixed(2)}</p>
                     </div>
                     <p className="text-gray-500 mb-4">
                       {item.selectedColor} / {item.selectedSize}
@@ -127,7 +127,7 @@ export default function CartPage() {
             <div className="border-t pt-6">
               <div className="flex justify-between mb-4">
                 <span className="text-xl">Subtotal</span>
-                <span className="text-xl">${cart.subtotal.toFixed(2)}</span>
+                <span className="text-xl">₹{cart.subtotal.toFixed(2)}</span>
               </div>
               <p className="text-gray-500 mb-6">Tax included and shipping calculated at checkout</p>
               <Button className="w-full" size="lg" asChild>

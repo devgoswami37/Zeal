@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="pt-16">
+      <div className="pt-[108px] md:pt-24">
         <HeroSlider />
         <CollectionsSlider />
         <FeatureCards />

@@ -255,18 +255,7 @@ const ProductImageCarousel = forwardRef<any, ProductImageCarouselProps>(
 
 
         {/* Mobile Dots */}
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2 md:hidden">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`w-2 h-2 rounded-full ${index === activeIndex ? "bg-black" : "bg-gray-300"}`}
-              aria-label={`Go to image ${index + 1}`}
-              aria-current={index === activeIndex ? "true" : "false"}
-            />
-          ))}
-        </div>
-
+        
         <style jsx global>{`
           .scrollbar-hide::-webkit-scrollbar {
             display: none;

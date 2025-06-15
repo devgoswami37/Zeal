@@ -209,7 +209,7 @@ export function ShopTheLookModal({ products, initialProductId, isOpen, onClose }
                 <h3 className="font-medium mb-2">{addedItem.product.name}</h3>
                 <p className="text-gray-500 mb-1">Color: {addedItem.selectedColor}</p>
                 <p className="text-gray-500 mb-2">Size: {addedItem.selectedSize}</p>
-                <p className="font-medium">${addedItem.product.price.toFixed(2)}</p>
+                <p className="font-medium">₹{addedItem.product.price.toFixed(2)}</p>
               </div>
             </div>
 
@@ -292,7 +292,7 @@ export function ShopTheLookModal({ products, initialProductId, isOpen, onClose }
           {/* Product Image */}
           <div className="w-full md:w-1/2 p-4">
             <div
-              className="relative w-full h-[340px] md:h-[350px] mx-auto"
+              className="relative w-full h-[440px] md:h-[350px] mx-auto"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -464,7 +464,7 @@ export function ShopTheLookModal({ products, initialProductId, isOpen, onClose }
         {/* Add to Cart Button */}
         <div className="sticky bottom-0 p-4 bg-white border-t mt-auto">
           <Button onClick={handleAddToCart} className="w-full bg-black hover:bg-black/90 text-white py-6">
-            ADD TO CART • ${(selectedProduct.price * quantity).toFixed(2)}
+            ADD TO CART • ₹{(selectedProduct.price * quantity).toFixed(2)}
           </Button>
           <button
             onClick={() => {

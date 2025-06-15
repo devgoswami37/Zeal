@@ -9,9 +9,9 @@ const slides = [
   {
     id: 1,
     desktopImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase___Mila___Slideshow_0005_Generative_Expand_Alt_2450x.jpg?v=1720533520",
+      "https://sudathi.com/cdn/shop/files/40RS154_1.jpg?v=1746431848&width=1100",
     mobileImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase___Mila___Slideshow_0005_Generative_Expand_Alt_2450x.jpg?v=1720533520",
+      "https://sudathi.com/cdn/shop/files/4454S321_1.jpg?v=1749810829&width=1100",
     alt: "Slide 1",
     smallHeading: "SUSTAINABLE SWIM",
     mainHeading: "Buy better. Wear more.",
@@ -22,9 +22,9 @@ const slides = [
   {
     id: 2,
     desktopImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase_Mila_Slideshow_Screenies_D_2450x.jpg?v=1720778611",
+      "https://www.leaclothingco.com/cdn/shop/files/website_banner_updated_15_x2000.jpg?v=1742283507",
     mobileImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase_Mila_Slideshow_Screenies_D_2450x.jpg?v=1720778611",
+      "https://www.leaclothingco.com/cdn/shop/files/LA_10855_2000x.jpg?v=1749586062",
     alt: "Slide 2",
     smallHeading: "NEW ARRIVALS",
     mainHeading: "Summer Collection 2025",
@@ -35,9 +35,9 @@ const slides = [
   {
     id: 3,
     desktopImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase___Mila___Slideshow_0008_Hue_Saturation_1_Crop_Alt_ed48ac54-8972-49a4-b14c-745eb49612a9_1950x.jpg?v=1720535290",
+      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/files/icon-cardigan-nutmeg-brown-cardigans-alohas-931543_1-min_8dfa4d2b-e0c3-4d81-b496-0f19b8be399a.png?v=1741367444&width=2100",
     mobileImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase___Mila___Slideshow_0008_Hue_Saturation_1_Crop_Alt_ed48ac54-8972-49a4-b14c-745eb49612a9_1950x.jpg?v=1720535290",
+      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/products/snug-fall-top-jacquard-brown-tops-alohas-492954.jpg?v=1705440561",
     alt: "Slide 3",
     smallHeading: "SUMMER ESSENTIALS",
     mainHeading: "Beach Ready Styles",
@@ -48,9 +48,9 @@ const slides = [
   {
     id: 4,
     desktopImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase___Mila___Slideshow_0004_Layer_1_Vignette_1950x.jpg?v=1720532473",
+      "https://www.leaclothingco.com/cdn/shop/files/SJ0130_3_1_65_2000x.jpg?v=1744008343",
     mobileImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/files/Showcase___Mila___Slideshow_0004_Layer_1_Vignette_1950x.jpg?v=1720532473",
+      "https://www.leaclothingco.com/cdn/shop/files/SJ0105_3_x2000.jpg?v=1744005847",
     alt: "Slide 4",
     smallHeading: "LIMITED EDITION",
     mainHeading: "Exclusive Collection",
@@ -101,7 +101,7 @@ export default function HeroSlider() {
 
   return (
     <div
-      className="relative w-full h-[80vh] md:h-[92vh] overflow-hidden"
+      className="relative w-full h-[78vh] md:h-[90vh] overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -120,7 +120,7 @@ export default function HeroSlider() {
               alt={slide.alt}
               fill
               priority={index === 0}
-              className="object-cover"
+              className="object-cover object-top"
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.1)] to-[rgba(0,0,0,0.4)]"></div>
@@ -133,7 +133,7 @@ export default function HeroSlider() {
               alt={slide.alt}
               fill
               priority={index === 0}
-              className="object-cover"
+              className="object-cover object-top"
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.1)] to-[rgba(0,0,0,0.4)]"></div>

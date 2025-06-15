@@ -28,7 +28,7 @@ export default function SustainabilitySection() {
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
                 <Image
-                  src="https://chantilly.myshopify.com/cdn/shop/files/planet.jpg?v=1619020466&width=1350"
+                  src="https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/products/airliner-sweater-nutmeg-tops-alohas-913696.jpg?v=1666709704&width=540"
                   alt="Woman in sustainable swimwear"
                   width={450}
                   height={600}
@@ -48,7 +48,7 @@ export default function SustainabilitySection() {
                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               >
                 <Image
-                  src="https://chantilly.myshopify.com/cdn/shop/files/145481217_200091641855594_4242286949372538483_n_854559bd-4c43-4560-9b19-5caa2c18e606.jpg?v=1617297634&width=600"
+                  src="https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/files/airliner-sweater-nutmeg-tops-alohas-733798_2048x2048_46fc829f-4ab0-4c8a-b57e-e8a462234576.webp?v=1677639758&width=540"
                   alt="Sustainable swimwear products"
                   width={400}
                   height={500}

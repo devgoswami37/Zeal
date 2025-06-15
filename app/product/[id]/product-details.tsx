@@ -126,9 +126,9 @@ export default function ProductDetails({ productId }: { productId: string }) {
 
             {/* Price display showing both original and discounted price */}
             <div className="flex items-center gap-3 mb-8">
-              <span className="text-xl md:text-2xl font-bold">${product.price.toFixed(2)}</span>
+              <span className="text-xl md:text-2xl font-bold">₹{product.price.toFixed(2)}</span>
               {product.originalPrice > product.price && (
-                <span className="text-lg text-gray-500 line-through">${product.originalPrice.toFixed(2)}</span>
+                <span className="text-lg text-gray-500 line-through">₹{product.originalPrice.toFixed(2)}</span>
               )}
               {product.originalPrice > product.price && (
                 <span className="text-sm text-red-500 font-medium">

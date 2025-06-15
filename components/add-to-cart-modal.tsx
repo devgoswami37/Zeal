@@ -43,7 +43,7 @@ export function AddToCartModal({ item, onClose }: AddToCartModalProps) {
               <h3 className="font-medium mb-2">{item.product.name}</h3>
               <p className="text-gray-500 mb-1">Color: {item.selectedColor}</p>
               <p className="text-gray-500 mb-2">Size: {item.selectedSize}</p>
-              <p className="font-medium">${item.product.price.toFixed(2)}</p>
+              <p className="font-medium">₹{item.product.price.toFixed(2)}</p>
             </div>
           </div>
 

@@ -51,6 +51,8 @@ export default function CollectionPage() {
               className="object-cover brightness-75"
               priority
             />
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-black/20 to-black30"></div>
           </div>
           <div className="relative text-center text-white z-10">
             <h1 className="text-4xl md:text-5xl font-light mb-4">{collection.title}</h1>

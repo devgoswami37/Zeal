@@ -17,7 +17,7 @@ const featureCards = [
     tagline: "EVERYDAY ESSENTIALS",
     title: "Designed to empower you to express your unique sense of style with confidence.",
     image:
-      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/files/pipe-dream-black-tops-alohas-578862_dfcad7e0-2b8f-41b3-982f-c9a899cd12fe.jpg?v=1718727423&width=900",
+      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/products/java-vest-ivory-tops-alohas-795974_31d3d956-0314-44dd-b604-711e671734c0.jpg?v=1666894896&width=900",
     buttonText: "SHOP OUR COLLECTION",
     buttonLink: "/collections/outerwear",
   },
@@ -26,7 +26,7 @@ const featureCards = [
     tagline: "SUMMER 2024",
     title: "Stand out wherever you go. Our latest lookbook has dropped and is ready to shop.",
     image:
-      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/products/java-vest-ivory-tops-alohas-795974_31d3d956-0314-44dd-b604-711e671734c0.jpg?v=1666894896&width=900",
+      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/files/pipe-dream-black-tops-alohas-578862_dfcad7e0-2b8f-41b3-982f-c9a899cd12fe.jpg?v=1718727423&width=900",
     buttonText: "VIEW LOOKBOOK",
     buttonLink: "/collections/tops",
   },
@@ -35,7 +35,7 @@ const featureCards = [
     tagline: "NEW ARRIVALS",
     title: "Discover timeless pieces and chic ensembles to elevate your world.",
     image:
-      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/files/melodrama-top-ivory-tops-alohas-377206_1.jpg?v=1718727842&width=900",
+      "https://palo-alto-theme-vibrant.myshopify.com/cdn/shop/products/fly-top-black-tops-alohas-889551.jpg?v=1666881702",
     buttonText: "SHOP BESTSELLERS",
     buttonLink: "/collections/sea-level-swim",
   },

@@ -27,8 +27,8 @@ export const COLLECTION_IMAGES: Record<string, CollectionInfo> = {
   sneakers: {
     title: "Sneakers",
     description:
-      "Elevate your everyday style with our versatile tops collection. From casual essentials to statement pieces, discover comfortable and fashionable designs that seamlessly blend into your wardrobe.",
-    backgroundImage: "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1708668433_3948163.jpg?format=webp&w=480&dpr=1.3",
+      "Upgrade your everyday look with our stylish tops — from comfy basics to standout pieces, perfect for any wardrobe.",
+    backgroundImage: "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1745837248_6457922.jpg?format=webp&w=480&dpr=1.3",
     displayImage:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749638084_2029020.jpg?format=webp&w=480&dpr=1.3",
   },
