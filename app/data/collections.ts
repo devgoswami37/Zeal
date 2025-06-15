@@ -32,6 +32,14 @@ export const COLLECTION_IMAGES: Record<string, CollectionInfo> = {
     displayImage:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749638084_2029020.jpg?format=webp&w=480&dpr=1.3",
   },
+  tops: {
+    title: "Tops",
+    description:
+      "Elevate your everyday style with our versatile tops collection. From casual essentials to statement pieces, discover comfortable and fashionable designs that seamlessly blend into your wardrobe.",
+    backgroundImage: "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/one-piece_1950x.jpg?v=1652113013",
+    displayImage:
+      "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/SEALEVEL-S20_007_2048x.jpg?v=1652109670",
+  },
   bottoms: {
     title: "Bottoms",
     description:
