@@ -7,22 +7,22 @@ export interface CollectionInfo {
 }
 
 export const COLLECTION_IMAGES: Record<string, CollectionInfo> = {
-  "sea-level-swim": {
-    title: "Sea Level Swim",
+  "shirts": {
+    title: "Shirts",
     description:
-      "Dive into luxury with our Sea Level Swim collection. Featuring premium Italian fabrics, UV protection, and flattering cuts, these pieces are designed for both style and performance in and out of the water.",
-    backgroundImage: "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/one-piece_1950x.jpg?v=1652113013",
+      "Dive into luxury with our Shirts. Featuring premium Italian fabrics, UV protection, and flattering cuts, these pieces are designed for both style and performance in and out of the water.",
+    backgroundImage: "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740721606_2128477.jpg?format=webp&w=480&dpr=1.3",
     displayImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/SeaLevel-slide3_2048x.jpg?v=1652109992",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742193406_7543978.jpg?format=webp&w=480&dpr=1.3",
   },
-  outerwear: {
-    title: "Outerwear",
+  "oversized-tshirt": {
+    title: "Oversized T-Shirts",
     description:
       "Embrace the elements in style with our carefully curated outerwear collection. From classic leather jackets to contemporary designs, each piece combines functionality with sophisticated urban aesthetics.",
     backgroundImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/SEALEVEL-S20_007_1080x.jpg?v=1652109670",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714974511_1661279.jpg?format=webp&w=480&dpr=1.3",
     displayImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/elite-collection_460x.jpg?v=1652109934",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722525147_4109345.jpg?format=webp&w=480&dpr=1.3",
   },
   sneakers: {
     title: "Sneakers",
@@ -40,14 +40,14 @@ export const COLLECTION_IMAGES: Record<string, CollectionInfo> = {
     displayImage:
       "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/SEALEVEL-S20_007_2048x.jpg?v=1652109670",
   },
-  bottoms: {
-    title: "Bottoms",
+  sarees: {
+    title: "Sarees",
     description:
-      "Complete your look with our sophisticated bottoms collection. Featuring premium materials and expert tailoring, these pieces offer both comfort and style for any occasion.",
+      "Complete your look with our sophisticated Saree collection. Featuring premium materials and expert tailoring, these pieces offer both comfort and style for any occasion.",
     backgroundImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/SEALEVEL-S20_007_1080x.jpg?v=1652109670",
+      "https://sudathi.com/cdn/shop/files/40RS154_5.jpg?v=1744369881&width=1100",
     displayImage:
-      "https://showcase-theme-mila.myshopify.com/cdn/shop/collections/SeaLevel-slide3_2048x.jpg?v=1652109992",
+      "https://sudathi.com/cdn/shop/files/4319S274_4.jpg?v=1743756220&width=1100",
   },
   dresses: {
     title: "Dresses",
