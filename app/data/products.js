@@ -579,7 +579,7 @@ export const products = [
       "Sophisticated tailored blazer, perfect for professional settings or dressing up casual outfits.",
     price: 129.99,
     originalPrice: 179.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1727349727_6400672.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -619,7 +619,7 @@ export const products = [
       "Flowing maxi dress with beautiful print, perfect for summer days and beach vacations.",
     price: 99.99,
     originalPrice: 139.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1728654846_9891348.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -657,7 +657,7 @@ export const products = [
       "Versatile Toy Story: Lotso Loves with multiple pockets, perfect for casual and outdoor activities.",
     price: 89.99,
     originalPrice: 109.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722524120_4119939.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -696,7 +696,7 @@ export const products = [
       "Trendy TSS Originals: Trident with drawstring hood, perfect for casual and athletic wear.",
     price: 49.99,
     originalPrice: 69.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1738155077_6118083.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -740,7 +740,7 @@ export const products = [
       "Elegant wrap dress with a flattering silhouette, perfect for both casual and formal occasions.",
     price: 89.99,
     originalPrice: 119.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1744708323_8919572.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -783,7 +783,7 @@ export const products = [
     description: "Trendy Wanderlusting, perfect for casual summer outfits.",
     price: 59.99,
     originalPrice: 79.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714979667_7606288.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -823,7 +823,7 @@ export const products = [
       "Cozy Wednesday: Both Worlds with ribbed details, perfect for cold weather layering.",
     price: 79.99,
     originalPrice: 99.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743790731_7007535.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -867,7 +867,7 @@ export const products = [
       "Versatile utility jumpsuit with multiple pockets, perfect for casual and work wear.",
     price: 119.99,
     originalPrice: 149.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1744697972_6470721.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -905,7 +905,7 @@ export const products = [
       "Classic ribbed tank top, perfect for layering or wearing alone in warm weather.",
     price: 29.99,
     originalPrice: 39.99,
-    category: "oversized-tshirt",
+    category: "Oversized T-Shirts",
     image:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714999320_4599169.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
@@ -949,7 +949,7 @@ export const products = [
       "Stylish Black Cotton Blend Printed Saree with a flattering A-line silhouette, perfect for day-to-night outfits.",
     price: 1990,
     originalPrice: 7000,
-    category: "sarees",
+    category: "Sarees",
     image:
       "https://sudathi.com/cdn/shop/files/3999S124_6.jpg?v=1746249160&width=1100",
     hoverImage:
@@ -988,7 +988,7 @@ export const products = [
       "Lightweight Teal Blue Swarovski Silk Saree with wide sleeves, perfect for beach cover-ups or casual layering.",
     price: 1999,
     originalPrice: 5000,
-    category: "sarees",
+    category: "Sarees",
     image:
       "https://sudathi.com/cdn/shop/files/3111S413_1.jpg?v=1702044763&width=1100",
     hoverImage:
@@ -1029,7 +1029,7 @@ export const products = [
       "Elegant Coffee Brown Shimmer Printed Saree, perfect for office wear or special occasions.",
     price: 89.99,
     originalPrice: 119.99,
-    category: "sarees",
+    category: "Sarees",
     image:
       "https://sudathi.com/cdn/shop/files/4453S308_5.jpg?v=1749816012&width=1100",
     hoverImage:
@@ -1068,7 +1068,7 @@ export const products = [
       "A flattering Navy Blue Pure Cotton Printed Saree for a slimming effect. Made from premium Italian fabric with excellent shape retention and UV protection.",
     price: 129.95,
     originalPrice: 129.95,
-    category: "sarees",
+    category: "Sarees",
     image:
       "https://sudathi.com/cdn/shop/files/39RS141_6.jpg?v=1746435280&width=1100",
     hoverImage:
@@ -1116,7 +1116,7 @@ export const products = [
       "A beautiful White Pure Cotton Floral Printed Saree with a relaxed fit, perfect for summer days and beach outings. Made from lightweight, breathable fabric.",
     price: 1199,
     originalPrice: 5990,
-    category: "sarees",
+    category: "Sarees",
     image:
       "https://sudathi.com/cdn/shop/files/40RS152_7.jpg?v=1744797229&width=1100",
     hoverImage:
@@ -1156,7 +1156,7 @@ export const products = [
       "A stylish bikini top with a floral pattern that matches perfectly with our Belinda Shirt. Comfortable and supportive for beach days.",
     price: 89.99,
     originalPrice: 99.99,
-    category: "sarees",
+    category: "Sarees",
     image: "https://sudathi.com/cdn/shop/files/4319S274_4.jpg?v=1743756220&width=1100",
     hoverImage:
       "https://sudathi.com/cdn/shop/files/4319S274_1.jpg?v=1743755997&width=1100",
@@ -1194,7 +1194,7 @@ export const products = [
       "Flowy Bright Pink Silk Woven Banarasi Saree with a matching floral pattern, perfect to complete your summer beach look. Lightweight and comfortable for all-day wear.",
     price: 180.0,
     originalPrice: 180.0,
-    category: "sarees",
+    category: "Sarees",
     image:
       "https://sudathi.com/cdn/shop/files/4352S3117_2.jpg?v=1746794423&width=1100",
     hoverImage:
