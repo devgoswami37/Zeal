@@ -15,7 +15,7 @@ export const COLLECTION_IMAGES: Record<string, CollectionInfo> = {
     displayImage:
       "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742193406_7543978.jpg?format=webp&w=480&dpr=1.3",
   },
-  "oversized-tshirts": {
+  "oversized-t-shirts": {
     title: "Oversized T-Shirts",
     description:
       "Embrace the elements in style with our carefully curated outerwear collection. From classic leather jackets to contemporary designs, each piece combines functionality with sophisticated urban aesthetics.",
