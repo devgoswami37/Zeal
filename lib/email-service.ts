@@ -41,6 +41,8 @@ const obfuscatedDateTime = `${currentDateTime.getFullYear()}${(currentDateTime.g
 
 // Prepend a common 3-digit number and append the obfuscated date and time to the checkout ID
 const formattedOrderId = `672${checkout._id}${obfuscatedDateTime}`;
+const orderTrackLink = `https://www.zealdecor.store/checkout/success?id=${checkout._id}`;
+
 
   // Create the items HTML
   const itemsHtml = cartItems
@@ -206,7 +208,7 @@ const formattedOrderId = `672${checkout._id}${obfuscatedDateTime}`;
           
           <div class="thank-you">
             <p>If you have any questions about your order, please contact our customer service.</p>
-            <a href="https://www.zealdecor.store/checkout/success?id=checkout._id" class="button">Track Your Order</a>
+            <a href="${orderTrackLink}" class="button">Track Your Order</a>
           </div>
         </div>
         <div class="footer">
