@@ -206,7 +206,7 @@ const formattedOrderId = `672${checkout._id}${obfuscatedDateTime}`;
           
           <div class="thank-you">
             <p>If you have any questions about your order, please contact our customer service.</p>
-            <a href="https://your-store-url.com/orders" class="button">Track Your Order</a>
+            <a href="https://www.zealdecor.store/checkout/success?id=checkout._id" class="button">Track Your Order</a>
           </div>
         </div>
         <div class="footer">

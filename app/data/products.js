@@ -4,56 +4,43 @@
 // filepath: c:\Users\pg177\Downloads\ecommerce-products (5)\app\data\products.ts
 export const products = [
   {
-    id: 24,
-    name: "Plaid Shirt: Petunia",
+    id: 1,
+    name: "Black Cotton Blend Printed Saree",
     description:
-      "A flattering Shirt featuring a V-neckline and ruched panels for a slimming effect. Made from premium Italian fabric with excellent shape retention and UV protection.",
-    price: 129.95,
-    originalPrice: 129.95,
-    category: "Shirts",
+      "Stylish Black Cotton Blend Printed Saree with a flattering A-line silhouette, perfect for day-to-night outfits.",
+    price: 1990,
+    originalPrice: 7000,
+    category: "Sarees",
     image:
-      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_4628129.jpg?format=webp&w=480&dpr=1.3",
+      "https://sudathi.com/cdn/shop/files/3999S124_6.jpg?v=1746249160&width=1100",
     hoverImage:
-      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_3532718.jpg?format=webp&w=480&dpr=1.3",
+      "https://sudathi.com/cdn/shop/files/3999S124_4.jpg?v=1746249160&width=1100",
     colors: [
-      {
-        name: "Vermont",
-        image:
-          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_4628129.jpg?format=webp&w=480&dpr=1.3",
-      },
       {
         name: "Black",
         image:
-          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_3532718.jpg?format=webp&w=480&dpr=1.3",
+          "https://sudathi.com/cdn/shop/files/3999S124_1.jpg?v=1736165267&width=1100",
       },
       {
-        name: "Navy",
+        name: "Brown",
         image:
-          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_5007470.jpg?format=webp&w=480&dpr=1.3",
-      },
-      {
-        name: "Red",
-        image:
-          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_6796932.jpg?format=webp&w=480&dpr=1.3",
+          "https://sudathi.com/cdn/shop/files/3999S124_8.jpg?v=1739458046&width=1100",
       },
     ],
-    sizes: ["4", "6", "8", "10", "12"],
+    sizes: ["XS", "S", "M", "L", "XL"],
     sizeAndFit: [
-      "True to size",
-      "Model is wearing size 8",
+      "A-line fit",
+      "Model is wearing size S",
       "Model's height: 5'9\" / 175 cm",
-      "Fully lined",
-      "Removable soft cups",
-      "80% Nylon, 20% Elastane",
+      "Shell: 100% Polyurethane, Lining: 100% Polyester",
+      "Wipe clean with damp cloth",
     ],
     inStock: true,
-    mainTags: ["shirt"],
+    mainTags: ["saree"],
     additionalImages: [
-      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_5007470.jpg?format=webp&w=480&dpr=1.3",
-      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_6796932.jpg?format=webp&w=480&dpr=1.3",
-      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689920_8183902.jpg?format=webp&w=480&dpr=1.3",
+      "https://sudathi.com/cdn/shop/files/3999S124_1.jpg?v=1736165267&width=1100",
+      "https://sudathi.com/cdn/shop/files/3999S124_5.jpg?v=1741516587&width=1100",
     ],
-    badge: "BEST SELLER",
   },
   {
     id: 2,
@@ -98,7 +85,7 @@ export const products = [
     name: "Side Rouching Shirt: Red",
     description:
       "A lightweight and breathable linen shirt, perfect for warm weather.",
-    price: 89.99,
+    price: 1.09,
     originalPrice: 129.99,
     category: "Shirts",
     image:
@@ -943,43 +930,56 @@ export const products = [
     ],
   },
   {
-    id: 1,
-    name: "Black Cotton Blend Printed Saree",
+    id: 24,
+    name: "Plaid Shirt: Petunia",
     description:
-      "Stylish Black Cotton Blend Printed Saree with a flattering A-line silhouette, perfect for day-to-night outfits.",
-    price: 1990,
-    originalPrice: 7000,
-    category: "Sarees",
+      "A flattering Shirt featuring a V-neckline and ruched panels for a slimming effect. Made from premium Italian fabric with excellent shape retention and UV protection.",
+    price: 129.95,
+    originalPrice: 129.95,
+    category: "Shirts",
     image:
-      "https://sudathi.com/cdn/shop/files/3999S124_6.jpg?v=1746249160&width=1100",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_4628129.jpg?format=webp&w=480&dpr=1.3",
     hoverImage:
-      "https://sudathi.com/cdn/shop/files/3999S124_4.jpg?v=1746249160&width=1100",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_3532718.jpg?format=webp&w=480&dpr=1.3",
     colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_4628129.jpg?format=webp&w=480&dpr=1.3",
+      },
       {
         name: "Black",
         image:
-          "https://sudathi.com/cdn/shop/files/3999S124_1.jpg?v=1736165267&width=1100",
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_3532718.jpg?format=webp&w=480&dpr=1.3",
       },
       {
-        name: "Brown",
+        name: "Navy",
         image:
-          "https://sudathi.com/cdn/shop/files/3999S124_8.jpg?v=1739458046&width=1100",
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_5007470.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Red",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_6796932.jpg?format=webp&w=480&dpr=1.3",
       },
     ],
-    sizes: ["XS", "S", "M", "L", "XL"],
+    sizes: ["4", "6", "8", "10", "12"],
     sizeAndFit: [
-      "A-line fit",
-      "Model is wearing size S",
+      "True to size",
+      "Model is wearing size 8",
       "Model's height: 5'9\" / 175 cm",
-      "Shell: 100% Polyurethane, Lining: 100% Polyester",
-      "Wipe clean with damp cloth",
+      "Fully lined",
+      "Removable soft cups",
+      "80% Nylon, 20% Elastane",
     ],
     inStock: true,
-    mainTags: ["saree"],
+    mainTags: ["shirt"],
     additionalImages: [
-      "https://sudathi.com/cdn/shop/files/3999S124_1.jpg?v=1736165267&width=1100",
-      "https://sudathi.com/cdn/shop/files/3999S124_5.jpg?v=1741516587&width=1100",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_5007470.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689872_6796932.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732689920_8183902.jpg?format=webp&w=480&dpr=1.3",
     ],
+    badge: "BEST SELLER",
   },
   {
     id: 25,
@@ -1109,7 +1109,7 @@ export const products = [
     ],
     badge: "BEST SELLER",
   },
-   {
+  {
     id: 28,
     name: "White Pure Cotton Floral Printed Saree",
     description:
@@ -1157,7 +1157,8 @@ export const products = [
     price: 89.99,
     originalPrice: 99.99,
     category: "Sarees",
-    image: "https://sudathi.com/cdn/shop/files/4319S274_4.jpg?v=1743756220&width=1100",
+    image:
+      "https://sudathi.com/cdn/shop/files/4319S274_4.jpg?v=1743756220&width=1100",
     hoverImage:
       "https://sudathi.com/cdn/shop/files/4319S274_1.jpg?v=1743755997&width=1100",
     colors: [
@@ -1227,257 +1228,257 @@ export const products = [
     ],
   },
   {
-  id: 31,
-  name: "Urban Blaze: Hawkins",
-  description:
-    "Step out in style with these versatile Urban Blaze: Hawkins lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
-  price: 1999,
-  originalPrice: 5000,
-  category: "Sneakers",
-  image:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734066239_8689705.jpg?format=webp&w=480&dpr=1.3",
-  hoverImage:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6141178.jpg?format=webp&w=480&dpr=1.3",
-  colors: [
-    {
-      name: "Vermont",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6141178.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Black",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_3790532.jpg?format=webp&w=480&dpr=1.3",
-    },
-  ],
-  sizes: ["4", "6", "8", "10", "12"],
-  sizeAndFit: [
-    "Fits true to size",
-    "Model is wearing size 10",
-    "Model's height: 6'1\" / 185 cm",
-    "Low-top silhouette",
-    "Padded collar and tongue",
-    "Upper: Mesh & Synthetic | Sole: Rubber",
-  ],
-  inStock: true,
-  mainTags: ["sneakers"],
-  additionalImages: [
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734066276_5236440.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6859456.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_7226538.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_3790532.jpg?format=webp&w=480&dpr=1.3",
-    "https://showcase-theme-mila.myshopify.com/cdn/shop/products/elite-black-seperates-bottom-elite-black-regular-bikini-pant-28340247232621.jpg?v=1651825938",
-  ],
-  badge: "BEST SELLER",
-},
-{
-  id: 32,
-  name: "Urban Blaze: Latte",
-  description:
-    "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
-  price: 3000,
-  originalPrice: 5000,
-  category: "Sneakers",
-  image:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_6238943.jpg?format=webp&w=480&dpr=1.3",
-  hoverImage:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_3839210.jpg?format=webp&w=480&dpr=1.3",
-  colors: [
-    {
-      name: "Vermont",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_3839210.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Red",
-      image:
-        "https://www.radliving.in/cdn/shop/products/rad5062.jpg?v=1663946515",
-    },
-  ],
-  sizes: ["7", "9", "9", "10", "11"],
-  sizeAndFit: [
-    "Fits true to size",
-    "Model is wearing size 10",
-    "Model's height: 6'1\" / 185 cm",
-    "Low-top silhouette",
-    "Padded collar and tongue",
-    "Upper: Mesh & Synthetic | Sole: Rubber",
-  ],
-  inStock: true,
-  mainTags: ["swimwear"],
-  additionalImages: [
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_4845320.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_3864375.jpg?format=webp&w=480&dpr=1.3",
-  ],
-},
-{
-  id: 33,
-  name: "Urban Blaze: Court Blue",
-  description:
-    "Step out in style with these versatile lace-up Urban Blaze: Court Blue sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
-  price: 1599,
-  originalPrice: 4000,
-  category: "Sneakers",
-  image:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1707401.jpg?format=webp&w=480&dpr=1.3",
-  hoverImage:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_4120334.jpg?format=webp&w=480&dpr=1.3",
-  colors: [
-    {
-      name: "Vermont",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1637827.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Navy",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8817642.jpg?format=webp&w=480&dpr=1.3",
-    },
-  ],
-  sizes: ["4", "6", "8", "10", "12"],
-  sizeAndFit: [
-    "Fits true to size",
-    "Model is wearing size 10",
-    "Model's height: 6'1\" / 185 cm",
-    "Low-top silhouette",
-    "Padded collar and tongue",
-    "Upper: Mesh & Synthetic | Sole: Rubber",
-  ],
-  inStock: true,
-  mainTags: ["sneakers"],
-  additionalImages: [
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1637827.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8817642.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8008842.jpg?format=webp&w=480&dpr=1.3",
-  ],
-  badge: "",
-},
-{
-  id: 34,
-  name: "Punisher: Vigilante",
-  description:
-    "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
-  price: 3999,
-  originalPrice: 5000,
-  category: "Sneakers",
-  image:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749638084_2029020.jpg?format=webp&w=480&dpr=1.3",
-  hoverImage:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8331765.jpg?format=webp&w=480&dpr=1.3",
-  colors: [
-    {
-      name: "Vermont",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8331765.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Black",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_7817440.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Navy",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8289075.jpg?format=webp&w=480&dpr=1.3",
-    },
-  ],
-  sizes: ["4", "6", "8", "10", "12"],
-  sizeAndFit: [
-    "Fits true to size",
-    "Model is wearing size 10",
-    "Model's height: 6'1\" / 185 cm",
-    "Low-top silhouette",
-    "Padded collar and tongue",
-    "Upper: Mesh & Synthetic | Sole: Rubber",
-  ],
-  inStock: true,
-  mainTags: ["sneakers"],
-  additionalImages: [
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_7817440.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8289075.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_9745281.jpg?format=webp&w=480&dpr=1.3",
-  ],
-  badge: "",
-},
-{
-  id: 35,
-  name: "Urban Blaze: Splatter",
-  description:
-    "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
-  price: 1999,
-  originalPrice: 3000,
-  category: "Sneakers",
-  image:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734080523_7250009.jpg?format=webp&w=480&dpr=1.3",
-  hoverImage:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_5536213.jpg?format=webp&w=480&dpr=1.3",
-  colors: [
-    {
-      name: "Vermont",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734080523_7250009.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Black",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_5536213.jpg?format=webp&w=480&dpr=1.3",
-    },
-  ],
-  sizes: ["4", "6", "8", "10", "12"],
-  sizeAndFit: [
-    "Fits true to size",
-    "Model is wearing size 10",
-    "Model's height: 6'1\" / 185 cm",
-    "Low-top silhouette",
-    "Padded collar and tongue",
-    "Upper: Mesh & Synthetic | Sole: Rubber",
-  ],
-  inStock: true,
-  mainTags: ["sneakers"],
-  additionalImages: [
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_6968783.jpg?format=webp&w=480&dpr=1.3",
-  ],
-  badge: "",
-},
-{
-  id: 36,
-  name: "Reverb: Mocha",
-  description:
-    "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
-  price: 4000,
-  originalPrice: 9900,
-  category: "Sneakers",
-  image:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742216396_2272450.jpg?format=webp&w=480&dpr=1.3",
-  hoverImage:
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4416332.jpg?format=webp&w=480&dpr=1.3",
-  colors: [
-    {
-      name: "Vermont",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4416332.jpg?format=webp&w=480&dpr=1.3",
-    },
-    {
-      name: "Black",
-      image:
-        "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4953005.jpg?format=webp&w=480&dpr=1.3",
-    },
-  ],
-  sizes: ["4", "6", "8", "10", "12"],
-  sizeAndFit: [
-    "Fits true to size",
-    "Model is wearing size 10",
-    "Model's height: 6'1\" / 185 cm",
-    "Low-top silhouette",
-    "Padded collar and tongue",
-    "Upper: Mesh & Synthetic | Sole: Rubber",
-  ],
-  inStock: true,
-  mainTags: ["sneakers"],
-  additionalImages: [
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_7988475.jpg?format=webp&w=480&dpr=1.3",
-    "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4953005.jpg?format=webp&w=480&dpr=1.3",
-  ],
-  badge: "BEST SELLER",
-},
+    id: 31,
+    name: "Urban Blaze: Hawkins",
+    description:
+      "Step out in style with these versatile Urban Blaze: Hawkins lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
+    price: 1999,
+    originalPrice: 5000,
+    category: "Sneakers",
+    image:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734066239_8689705.jpg?format=webp&w=480&dpr=1.3",
+    hoverImage:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6141178.jpg?format=webp&w=480&dpr=1.3",
+    colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6141178.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Black",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_3790532.jpg?format=webp&w=480&dpr=1.3",
+      },
+    ],
+    sizes: ["4", "6", "8", "10", "12"],
+    sizeAndFit: [
+      "Fits true to size",
+      "Model is wearing size 10",
+      "Model's height: 6'1\" / 185 cm",
+      "Low-top silhouette",
+      "Padded collar and tongue",
+      "Upper: Mesh & Synthetic | Sole: Rubber",
+    ],
+    inStock: true,
+    mainTags: ["sneakers"],
+    additionalImages: [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734066276_5236440.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_6859456.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_7226538.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733974740_3790532.jpg?format=webp&w=480&dpr=1.3",
+      "https://showcase-theme-mila.myshopify.com/cdn/shop/products/elite-black-seperates-bottom-elite-black-regular-bikini-pant-28340247232621.jpg?v=1651825938",
+    ],
+    badge: "BEST SELLER",
+  },
+  {
+    id: 32,
+    name: "Urban Blaze: Latte",
+    description:
+      "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
+    price: 3000,
+    originalPrice: 5000,
+    category: "Sneakers",
+    image:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_6238943.jpg?format=webp&w=480&dpr=1.3",
+    hoverImage:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_3839210.jpg?format=webp&w=480&dpr=1.3",
+    colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_3839210.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Red",
+        image:
+          "https://www.radliving.in/cdn/shop/products/rad5062.jpg?v=1663946515",
+      },
+    ],
+    sizes: ["7", "9", "9", "10", "11"],
+    sizeAndFit: [
+      "Fits true to size",
+      "Model is wearing size 10",
+      "Model's height: 6'1\" / 185 cm",
+      "Low-top silhouette",
+      "Padded collar and tongue",
+      "Upper: Mesh & Synthetic | Sole: Rubber",
+    ],
+    inStock: true,
+    mainTags: ["swimwear"],
+    additionalImages: [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_4845320.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_3864375.jpg?format=webp&w=480&dpr=1.3",
+    ],
+  },
+  {
+    id: 33,
+    name: "Urban Blaze: Court Blue",
+    description:
+      "Step out in style with these versatile lace-up Urban Blaze: Court Blue sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
+    price: 1599,
+    originalPrice: 4000,
+    category: "Sneakers",
+    image:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1707401.jpg?format=webp&w=480&dpr=1.3",
+    hoverImage:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_4120334.jpg?format=webp&w=480&dpr=1.3",
+    colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1637827.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Navy",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8817642.jpg?format=webp&w=480&dpr=1.3",
+      },
+    ],
+    sizes: ["4", "6", "8", "10", "12"],
+    sizeAndFit: [
+      "Fits true to size",
+      "Model is wearing size 10",
+      "Model's height: 6'1\" / 185 cm",
+      "Low-top silhouette",
+      "Padded collar and tongue",
+      "Upper: Mesh & Synthetic | Sole: Rubber",
+    ],
+    inStock: true,
+    mainTags: ["sneakers"],
+    additionalImages: [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_1637827.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8817642.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732859253_8008842.jpg?format=webp&w=480&dpr=1.3",
+    ],
+    badge: "",
+  },
+  {
+    id: 34,
+    name: "Punisher: Vigilante",
+    description:
+      "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
+    price: 3999,
+    originalPrice: 5000,
+    category: "Sneakers",
+    image:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1749638084_2029020.jpg?format=webp&w=480&dpr=1.3",
+    hoverImage:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8331765.jpg?format=webp&w=480&dpr=1.3",
+    colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8331765.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Black",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_7817440.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Navy",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8289075.jpg?format=webp&w=480&dpr=1.3",
+      },
+    ],
+    sizes: ["4", "6", "8", "10", "12"],
+    sizeAndFit: [
+      "Fits true to size",
+      "Model is wearing size 10",
+      "Model's height: 6'1\" / 185 cm",
+      "Low-top silhouette",
+      "Padded collar and tongue",
+      "Upper: Mesh & Synthetic | Sole: Rubber",
+    ],
+    inStock: true,
+    mainTags: ["sneakers"],
+    additionalImages: [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_7817440.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_8289075.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741089105_9745281.jpg?format=webp&w=480&dpr=1.3",
+    ],
+    badge: "",
+  },
+  {
+    id: 35,
+    name: "Urban Blaze: Splatter",
+    description:
+      "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
+    price: 1999,
+    originalPrice: 3000,
+    category: "Sneakers",
+    image:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734080523_7250009.jpg?format=webp&w=480&dpr=1.3",
+    hoverImage:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_5536213.jpg?format=webp&w=480&dpr=1.3",
+    colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734080523_7250009.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Black",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_5536213.jpg?format=webp&w=480&dpr=1.3",
+      },
+    ],
+    sizes: ["4", "6", "8", "10", "12"],
+    sizeAndFit: [
+      "Fits true to size",
+      "Model is wearing size 10",
+      "Model's height: 6'1\" / 185 cm",
+      "Low-top silhouette",
+      "Padded collar and tongue",
+      "Upper: Mesh & Synthetic | Sole: Rubber",
+    ],
+    inStock: true,
+    mainTags: ["sneakers"],
+    additionalImages: [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1734071640_6968783.jpg?format=webp&w=480&dpr=1.3",
+    ],
+    badge: "",
+  },
+  {
+    id: 36,
+    name: "Reverb: Mocha",
+    description:
+      "Step out in style with these versatile lace-up sneakers featuring a cushioned insole and breathable mesh upper. Designed for all-day comfort and effortless streetwear appeal.",
+    price: 4000,
+    originalPrice: 9900,
+    category: "Sneakers",
+    image:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742216396_2272450.jpg?format=webp&w=480&dpr=1.3",
+    hoverImage:
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4416332.jpg?format=webp&w=480&dpr=1.3",
+    colors: [
+      {
+        name: "Vermont",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4416332.jpg?format=webp&w=480&dpr=1.3",
+      },
+      {
+        name: "Black",
+        image:
+          "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4953005.jpg?format=webp&w=480&dpr=1.3",
+      },
+    ],
+    sizes: ["4", "6", "8", "10", "12"],
+    sizeAndFit: [
+      "Fits true to size",
+      "Model is wearing size 10",
+      "Model's height: 6'1\" / 185 cm",
+      "Low-top silhouette",
+      "Padded collar and tongue",
+      "Upper: Mesh & Synthetic | Sole: Rubber",
+    ],
+    inStock: true,
+    mainTags: ["sneakers"],
+    additionalImages: [
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_7988475.jpg?format=webp&w=480&dpr=1.3",
+      "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741416673_4953005.jpg?format=webp&w=480&dpr=1.3",
+    ],
+    badge: "BEST SELLER",
+  },
 ];
